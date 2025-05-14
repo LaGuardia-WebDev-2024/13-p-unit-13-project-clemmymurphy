@@ -1,15 +1,30 @@
-#movie-result {
-  background: rgb(244, 98, 181);
-  border: 5px solid black;
+@font-face {
+  font-family: american kestral;
+  src: url(https://cdn.glitch.global/3a23ad6e-1587-4f18-a9aa-9481b05ccc73/americankestral.ttf?v=1746807243521);
+}
+
+body {
+  font-family: american kestral;
+  color: rgb(199, 217, 221);
+  background: rgb(173, 178, 212);
+}
+
+label{
+  color: rgbrgb(204,212,255);
+}
+
+#model-result {
+  background-image: url(https://cdn.glitch.global/3a23ad6e-1587-4f18-a9aa-9481b05ccc73/IMG_0527.JPG?v=1747152928543);
+  border: 5px solid rgb(213, 229, 213);
   font-size: 24px;
   height: 160px;
   margin-top: 10px;
   margin-bottom: 20px;
 }
 
-#book-result {
-  background: rgb(196, 159, 255);
-  border: 5px solid black;
+#show-result {
+  background-image: url(https://cdn.glitch.global/3a23ad6e-1587-4f18-a9aa-9481b05ccc73/IMG_0526.jpeg?v=1747152936199);
+  border: 5px solid rgb(213, 229, 213);
   font-size: 24px;
   height: 160px;
   margin-top: 10px;
@@ -18,5 +33,5 @@
 
 hr {
   height: 5px;
-  background-color: black;
+  background-color: rgb(166, 174, 191);
 }
