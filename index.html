@@ -21,67 +21,88 @@ Select ONE Additional Feature to Add
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>Quiz About [Me]</h1>
-    <hr />
-    <!-- Movie Question -->
-    <form id="movie-form">
+    <h1>Clementine's Crazy Quiz!</h1>
+     <img id="wing"
+          src="https://cdn.glitch.global/3a23ad6e-1587-4f18-a9aa-9481b05ccc73/baka.gif?v=1747150610261"
+         width="310"
+         
+         <hr />
+<!-- Movie Question -->
+    <form id="model-form">
       <label>
-        🎥 What is my favorite movie?
-        <select id="movie-answer">
-          <option value="movie1">movie 1</option>
-          <option value="movie2">movie 2</option>
-          <option value="movie3">movie 3</option>
-          <option value="movie4">movie 4</option>
+         Who is my favorite model?
+        <select id="model-answer">
+          <option value="model1">Tanya Dziahileva</option>
+          <option value="model2">Alex Consani</option>
+          <option value="model3">Natalia Vodianova</option>
+          <option value="model4"> Vlada</option>
         </select>
       </label>
-      <button type="submit">Check Movie Answer</button>
+      <button type="submit">Check Answer </button>
     </form>
-    <div id="movie-result"></div>
+    <div id="model-result">
+    
+    
+    </div>
     <hr />
     <!-- Book Question -->
-    <form id="book-form">
+    <form id="show-form">
       <label>
-        📖 What is my favorite book?
-        <select id="book-answer">
-          <option value="book1">book 1</option>
-          <option value="book2">book 2</option>
-          <option value="book3">book 3</option>
-          <option value="book4">book 4</option>
+     What is my favorite fashion show of all time?
+        <select id="show-answer">
+          <option value="show1">Thierry Mugler Autumn/Winter 1995</option>
+          <option value="show2">Chalayan autumn/winter 2000</option>
+          <option value="show3">MqQueen’s Horn of Plenty autumn/winter 2009 show,</option>
+          <option value="show4">Galliano for Dior Couture 1998</option>
         </select>
       </label>
       <button type="submit">Check Book Answer</button>
     </form>
-    <div id="book-result"></div>
+    <div id="show-result"></div>
+     
+    <img id="black"
+          src="https://cdn.glitch.global/3a23ad6e-1587-4f18-a9aa-9481b05ccc73/2158369_45fd2.gif?v=1747239762470"
+       
+         width="290">
+    <h1>Thanks for playing!</h1>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
-      //Movie Question jQuery Code
-      $("#movie-form").on("submit", function (event) {
+       $("#black").hide()
+      $("#black").slideDown(2000)
+      $("#wing").hide()
+      $("#wing").slideDown(2000)
+      //Model Question jQuery Code
+      $("#model-form").on("submit", function (event) {
         event.preventDefault();
 
-        var $answer = $("#movie-answer");
+        var $answer = $("#model-answer");
         var answer = $answer.val();
 
-        if (answer === "movie1") {
-          $("#movie-result").text("YESSSS!");
+        if (answer === "model1") {
+          $("#model-result").text("Honestly the face of a generation you are correct!");
+          
+        
+     
         } else {
-          $("#movie-result").text("Try Again!");
+          $("#model-result").text("Try again sis!");
         }
       });
 
-      //Book Question jQuery Code
-      $("#book-form").on("submit", function (event) {
+      //show Question jQuery Code
+      $("#show-form").on("submit", function (event) {
         event.preventDefault();
 
-        var $answer = $("#book-answer");
+        var $answer = $("#show-answer");
         var answer = $answer.val();
 
-        if (answer === "book1") {
-          $("#book-result").text("YESSSS!");
+        if (answer === "show1") {
+          $("#show-result").text("Honestly this show saved my life correct!");
         } else {
-          $("#book-result").text("Try Again!");
+          $("#show-result").text("An incredible show but not the right answer!");
         }
       });
     </script>
+    
   </body>
 
   <!--- Taken From Khan Academy HTML/JS: Making webpages interactive with jQuery-->
